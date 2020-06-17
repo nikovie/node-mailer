@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:ui": "rm -rf build && cd ../react-app/ && npm run build && cp -r build ../node-mailer/"
   },
   "author": "Niko Vierikko",
   "license": "MIT",
